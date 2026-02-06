@@ -21,7 +21,7 @@
 % ---------- Espaciado y listas ----------
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.3\baselineskip}
-\setlist[itemize]{noitemsep, topsep=0pt}
+\setlist[itemize]{noitemsep, topsep=0pt, after=\vspace{0.3\baselineskip}}
 
 % ---------- Formato de secciones ----------
 \titleformat{\section}{
@@ -29,6 +29,15 @@
 }{}{0em}{}[\titlerule]
 
 \titlespacing{\section}{0pt}{12pt}{6pt}
+
+% \entry{Puesto}{Ubicación}{Empresa}{Fechas}
+\newcommand{\entry}[4]{
+  % Minipage asegura que el bloque del título no se rompa entre páginas
+  \begin{minipage}[t]{\linewidth}
+    \textbf{#1} \hfill \textit{#2} \\
+    \textbf{\textit{#3}} \hfill #4
+  \end{minipage}
+}
 
 % ==================================================
 % Contenido del documento
@@ -42,5 +51,61 @@
   Oaxaca de Juárez, Oaxaca, México \textbullet{} (+52) 951 765 2254 \textbullet{}
   \href{mailto:luisrmrz1699@gmail.com}{luisrmrz1699@gmail.com}
 \end{center}
+
+\section*{Perfil profesional}
+
+Ingeniero de Soporte con más de 2 años de experiencia en soporte técnico en sitio y remoto, enfocado en la instalación, configuración y mantenimiento de equipos informáticos. Mi principal fortaleza es la paciencia y la capacidad de análisis para resolver incidencias poco habituales, buscando siempre soluciones eficientes y sostenibles. Me motiva el crecimiento profesional continuo y valoro profundamente los entornos de trabajo basados en el respeto y la colaboración.
+
+\section*{Experiencia laboral}
+
+\entry
+  {Auxiliar de Sistemas}
+  {Oaxaca, México}
+  {Herst Electronics}
+  {Julio 2025 - Actualidad}
+\begin{itemize}
+  \item Lista.
+\end{itemize}
+
+\entry
+  {Técnico de Apoyo}
+  {Ciudad de México, México}
+  {MacStore}
+  {Junio 2025 - Julio 2025}
+\begin{itemize}
+  \item Lista.
+\end{itemize}
+
+\entry
+  {Ingeniero de Soporte en Sitio}
+  {Oaxaca, México}
+  {Kenos Scanda}
+  {Enero 2023 - Febrero 2025}
+\begin{itemize}
+    \item Lista.
+\end{itemize}
+
+\entry
+  {Técnico de Soporte y Reparación de Equipos de Cómputo}
+  {Oaxaca de Juárez, Oaxaca}
+  {Innovaciones Tecnológicas}
+  {Septiembre 2018 - Septiembre 2022}
+\begin{itemize}
+  \item Lista.
+\end{itemize}
+
+\section*{Educación}
+
+\entry
+  {Licenciatura en Ingeniería en Sistemas Computacionales}
+  {Oaxaca de Juárez, Oaxaca}
+  {Instituto de Estudios Universitarios}
+  {Octubre 2023 - Enero 2027}
+
+\entry
+  {Bachillerato General}
+  {Oaxaca de Juárez, Oaxaca}
+  {Colegio de Bachilleres del Estado de Oaxaca}
+  {Enero 2017 - Diciembre 2019}
 
 \end{document}
