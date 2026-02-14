@@ -1,5 +1,8 @@
 name: Build LaTeX PDFs
 
+permissions:
+  contents: write
+
 on:
   push:
     branches: [ main ]
