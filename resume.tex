@@ -1,0 +1,139 @@
+\documentclass[11pt,letterpaper]{article}
+
+% ---------- Language & Encoding ----------
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% ---------- Margins ----------
+\usepackage[margin=1.5cm]{geometry}
+
+% ---------- Typography ----------
+\usepackage{lmodern}
+
+% ---------- Utilities ----------
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{multicol}
+
+% ---------- Spacing & Lists ----------
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.15\baselineskip}
+\setlist[itemize]{noitemsep, topsep=0pt, after=\vspace{0.15\baselineskip}}
+
+% ---------- Section Formatting ----------
+\titleformat{\section}{
+  \large\bfseries\uppercase
+}{}{0em}{}[\titlerule]
+
+\titlespacing{\section}{0pt}{6pt}{3pt}
+
+% ---------- Entry Command ----------
+\newcommand{\entry}[4]{
+  \begin{minipage}[t]{\linewidth}
+    \textbf{#1} \hfill \textit{#2} \\
+    \textbf{\textit{#3}} \hfill #4
+  \end{minipage}
+}
+
+% ==================================================
+% Document Content
+% ==================================================
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+% ---------- Header ----------
+\begin{center}
+  {\huge\bfseries LUIS ÁNGEL RAMÍREZ VILLANUEVA}\\[3pt]
+  Oaxaca de Juárez, Oaxaca, Mexico \textbullet{} (+52) 951 765 2254 \textbullet{}
+  \href{mailto:luisrmrz1699@gmail.com}{luisrmrz1699@gmail.com}
+\end{center}
+
+\section*{Profile}
+
+IT Support Engineer with over 2 years of experience providing on-site and remote technical support, specializing in the installation, configuration, and maintenance of computer equipment. Recognized for patience and analytical problem-solving skills when handling uncommon technical issues, with a strong interest in continuous professional growth and collaborative work environments.
+
+\section*{Work Experience}
+
+\entry
+  {Systems Assistant}
+  {Oaxaca, Mexico}
+  {Herst Electronics}
+  {July 2025 -- Present}
+\begin{itemize}
+  \item Primarily on-site technical support for the Systems department at Romasa, with occasional support for external clients
+  \item Installation, configuration, and preparation of computer equipment, including operating systems and base software
+  \item Preventive maintenance of computer and printing equipment, reducing recurring incidents
+  \item Development, with the assistance of AI tools, of an internal system for computer inventory and maintenance management
+  \item Creation of technical documentation and activity records, establishing previously undefined operational processes
+\end{itemize}
+
+\entry
+  {On-Site Support Engineer}
+  {Oaxaca, Mexico}
+  {Kenos Scanda}
+  {January 2023 -- February 2025}
+\begin{itemize}
+  \item On-site technical support for the Mobility ADO project, assisting users across offices, terminals, and operational locations
+  \item Resolution of hardware and software incidents for a high volume of users in corporate environments
+  \item Incident management and tracking using IBM Maximo and, during the final stage, ServiceNow
+  \item Domain integration and user validation within Active Directory
+  \item Installation and configuration of computer equipment, including static IP assignments
+  \item Inventory control and updates through signed responsibility forms recorded in the system
+\end{itemize}
+
+\entry
+  {Computer Support Technician}
+  {Oaxaca, Mexico}
+  {Innovaciones Tecnológicas}
+  {September 2018 -- September 2022}
+\begin{itemize}
+  \item Diagnosis, repair, and maintenance of laptops and desktop computers
+  \item Installation and configuration of Windows and macOS operating systems
+  \item Occasional assembly of computer equipment based on specific requirements
+  \item Technical customer assistance, as well as support in sales and cashier activities
+\end{itemize}
+
+\section*{Education}
+
+\entry
+  {Computer Systems Engineering (in progress)}
+  {Oaxaca, Mexico}
+  {Instituto de Estudios Universitarios}
+  {October 2023 -- January 2027}
+
+\entry
+  {General High School}
+  {Oaxaca, Mexico}
+  {Colegio de Bachilleres del Estado de Oaxaca}
+  {January 2017 -- December 2019}
+
+\begin{multicols}{2}
+
+\textbf{\MakeUppercase{Technical Skills}}
+\begin{itemize}
+  \item On-site and remote technical support
+  \item Computer installation and configuration
+  \item Active Directory (basic management)
+  \item Hardware diagnostics and maintenance
+  \item Technical documentation
+\end{itemize}
+
+\columnbreak
+
+\textbf{\MakeUppercase{Certifications and Languages}}
+\begin{itemize}
+  \item CCNA Routing and Switching (Cisco Netacad)
+  \item IT Essentials (Cisco Netacad)
+  \item Software Engineering Fundamentals (Platzi)
+  \item Introduction to Generative AI (Google Cloud)
+  \item English: Basic
+\end{itemize}
+
+\end{multicols}
+
+\end{document}
