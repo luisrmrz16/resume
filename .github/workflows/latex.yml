@@ -27,24 +27,17 @@ jobs:
 
       - name: Delete previous "latest" release
         if: always()
-        uses: actions/github-script@v8
-        with:
-          script: |
-            try {
-              const { data: release } = await github.rest.repos.getReleaseByTag({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                tag: 'latest'
-              });
-              await github.rest.repos.deleteRelease({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                release_id: release.id
-              });
-              console.log('Deleted previous "latest" release');
-            } catch (e) {
-              console.log('No previous "latest" release to delete');
-            }
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Checking for previous 'latest' release..."
+          if gh release view "latest" >/dev/null 2>&1; then
+            echo "Deleting previous 'latest' release and tag..."
+            gh release delete "latest" --yes --cleanup-tag
+            echo "Deleted previous 'latest' release and tag"
+          else
+            echo "No previous 'latest' release to delete"
+          fi
 
       - name: Create Release
         uses: softprops/action-gh-release@v3
