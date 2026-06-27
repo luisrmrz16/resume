@@ -13,23 +13,45 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Compile Spanish CV
-        uses: xu-cheng/latex-action@v3
+        uses: xu-cheng/latex-action@v4
         with:
           root_file: main.tex
 
       - name: Compile English Resume
-        uses: xu-cheng/latex-action@v3
+        uses: xu-cheng/latex-action@v4
         with:
           root_file: resume.tex
 
-      - name: Create / Update Release
-        uses: softprops/action-gh-release@v2
+      - name: Delete previous "latest" release
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            try {
+              const { data: release } = await github.rest.repos.getReleaseByTag({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                tag: 'latest'
+              });
+              await github.rest.repos.deleteRelease({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                release_id: release.id
+              });
+              console.log('Deleted previous "latest" release');
+            } catch (e) {
+              console.log('No previous "latest" release to delete');
+            }
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: latest
           name: Latest Resume
+          generate_release_notes: true
           files: |
             main.pdf
             resume.pdf
