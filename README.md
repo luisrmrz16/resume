@@ -2,7 +2,24 @@
 
 Currículum vitae profesional desarrollado en LaTeX.
 
-[![Vista previa del CV](assets/preview.png)](https://github.com/luisrmrz16/resume/releases)
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/luisrmrz16/resume/releases">
+        <img src="assets/preview-es.png" alt="Vista previa del CV en español" width="100%">
+      </a>
+      <br>
+      <sub>Español</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/luisrmrz16/resume/releases">
+        <img src="assets/preview-en.png" alt="Resume preview in English" width="100%">
+      </a>
+      <br>
+      <sub>English</sub>
+    </td>
+  </tr>
+</table>
 
 Este repositorio contiene las versiones en español e inglés de mi CV, diseñadas
 con un formato limpio, minimalista y compatible con sistemas de seguimiento de
