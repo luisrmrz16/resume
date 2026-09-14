@@ -6,7 +6,7 @@
 \usepackage[utf8]{inputenc}
 
 % ---------- Margins ----------
-\usepackage[margin=1.4cm]{geometry}
+\usepackage[margin=1.25cm]{geometry}
 
 % ---------- Typography ----------
 \usepackage{lmodern}
@@ -20,17 +20,16 @@
 
 % ---------- Spacing & Lists ----------
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0.1\baselineskip}
-\setlist[itemize]{noitemsep, topsep=0pt, after=\vspace{0.1\baselineskip}}
+\setlength{\parskip}{0.05\baselineskip}
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1.2em, after=\vspace{0.05\baselineskip}}
 
 % ---------- Section Formatting ----------
 \titleformat{\section}{
   \large\bfseries\uppercase
 }{}{0em}{}[\titlerule]
 
-\titlespacing{\section}{0pt}{4pt}{2pt}
+\titlespacing{\section}{0pt}{3pt}{1pt}
 
-% ---------- Entry Command ----------
 \newcommand{\entry}[4]{
   \begin{minipage}[t]{\linewidth}
     \textbf{#1} \hfill \textit{#2} \\
@@ -38,18 +37,13 @@
   \end{minipage}
 }
 
-% ==================================================
-% Document Content
-% ==================================================
-
 \begin{document}
 
 \pagenumbering{gobble}
 
-% ---------- Header ----------
 \begin{center}
-	{\huge\bfseries LUIS ÁNGEL RAMÍREZ VILLANUEVA}\\[2pt]
-	Oaxaca de Juárez, Oaxaca, Mexico \textbullet{} (+52) 951 765 2254 \textbullet{}
+	{\huge\bfseries LUIS ÁNGEL RAMÍREZ VILLANUEVA}\\[1pt]
+	Oaxaca de Juárez \textbullet{} open to remote Mexico \textbullet{} (+52) 951 765 2254 \textbullet{}
 	\href{mailto:luisrmrz1699@gmail.com}{luisrmrz1699@gmail.com}\\[1pt]
 	\href{https://github.com/luisrmrz16}{GitHub} \textbullet{}
 	\href{https://www.linkedin.com/in/luisrmrz16/}{LinkedIn}
@@ -57,7 +51,7 @@
 
 \section*{Profile}
 
-IT professional with over 3 years of on-site and remote support experience who also builds and improves internal applications (Angular, Supabase). Strengths: failure analysis, user empathy, and practical solution building. Seeking roles that combine support and development in growth-oriented technical environments.
+Over 3 years of on-site and remote IT support (L1 and some L2): help desk, tickets, incident resolution, and user empathy. Secondarily, improves internal operational tools with AI-assisted coding (``vibecoding'') and basic development notions. Seeking growth in support, service desk, or field/remote support roles in Mexico.
 
 \section*{Work Experience}
 
@@ -67,10 +61,9 @@ IT professional with over 3 years of on-site and remote support experience who a
 {Herst Electronics}
 {June 2026 --- Present}
 \begin{itemize}
-	\item Responsible for technical support and IT operations at a Romasa client branch, handling user requests, computers, printers, and standard software
-	\item Administrative support with Sicofi for invoice generation, internal ERP improvements in MS Access, and basic SQL Server record updates
-	\item ERP database backups, verification of required server processes, and activity tracking through an operational log
-	\item Ongoing improvement of the internal inventory and maintenance app (Angular + Supabase)
+	\item On-site support and help desk (Romasa): tickets, Windows 10/11, printers, networks, and Microsoft Office / Outlook
+	\item Administrative support with Sicofi (invoicing), MS Access ERP, and basic SQL Server; operational logs / documentation
+	\item ERP database backups and server process checks; improvement of internal inventory tool (Angular + Supabase) with AI
 \end{itemize}
 
 \entry
@@ -79,10 +72,9 @@ IT professional with over 3 years of on-site and remote support experience who a
 {Herst Electronics}
 {July 2025 --- June 2026}
 \begin{itemize}
-	\item On-site support for Romasa's systems department and external clients, handling hardware, software, and printing incidents
-	\item Installation, configuration, and preparation of computer equipment for end users, including operating systems and standard software
-	\item Preventive maintenance of computer and printing equipment, helping reduce recurring incidents
-	\item Initial development of an internal system for inventory and maintenance management
+	\item On-site support for Romasa and external clients: hardware, software, printers, and network incidents
+	\item Setup of Windows 10/11 PCs (Office and standard software); preventive maintenance of computers and printers
+	\item Early contribution to an internal inventory and maintenance system for the support team
 \end{itemize}
 
 \entry
@@ -91,10 +83,10 @@ IT professional with over 3 years of on-site and remote support experience who a
 {Kenos Scanda}
 {January 2023 --- February 2025}
 \begin{itemize}
-	\item On-site support for Mobility ADO, assisting users across offices, terminals, and operational locations
-	\item Resolution and tracking of hardware, software, and connectivity incidents using IBM Maximo and ServiceNow
-	\item Domain integration and user validation within Active Directory
-	\item Equipment installation, configuration, inventory control, static IP assignment, and responsibility records
+	\item On-site support (L1/L2) for Mobility ADO: offices, terminals, and operational sites; user assistance and tickets
+	\item Ticket lifecycle in IBM Maximo and ServiceNow (ITSM): logging, tracking, resolution, and escalation
+	\item Active Directory (domain join, user validation); Office / Outlook in corporate environments
+	\item Equipment install and inventory; static IPs, networks / DNS, and responsibility records
 \end{itemize}
 
 \entry
@@ -103,15 +95,13 @@ IT professional with over 3 years of on-site and remote support experience who a
 {Innovaciones Tecnológicas}
 {September 2018 --- September 2022}
 \begin{itemize}
-	\item Diagnosis, repair, and maintenance of laptops and desktop computers
-	\item Installation and configuration of Windows and macOS operating systems
-	\item Computer assembly, technical customer assistance, and support in sales and cashier activities
+	\item Diagnosis, repair, and maintenance of laptops and PCs; Windows and macOS install; customer assistance
 \end{itemize}
 
 \section*{Projects}
 
 \begin{itemize}
-	\item \textbf{Inventory and maintenance app (Angular + Supabase)} --- Developed and improved at Herst Electronics for operational inventory and maintenance management; AI-assisted development.
+	\item \textbf{Internal inventory \& maintenance tool (Angular + Supabase)} --- Improved at Herst as operational support aid; web interface with data consumption; AI vibecoding (not a developer portfolio piece).
 \end{itemize}
 
 \section*{Education}
@@ -132,13 +122,13 @@ IT professional with over 3 years of on-site and remote support experience who a
 
 	\textbf{\MakeUppercase{Technical Skills}}
 	\begin{itemize}
-		\item On-site and remote technical support
-		\item Windows, macOS, and Linux
-		\item Active Directory and domain joining
-		\item Hardware, networks, and diagnostics
-		\item Angular, JavaScript/TypeScript, Supabase, SQL
-		\item Sicofi, MS Access, SQL Server, Maximo, ServiceNow
-		\item Documentation with Markdown and Obsidian
+		\item On-site/remote support; help desk and tickets
+		\item Windows 10/11, macOS, Linux; Active Directory
+		\item Hardware, printers, networks (IP/DNS)
+		\item Microsoft Office, Outlook; collaboration tools
+		\item ServiceNow, IBM Maximo (ITSM); basic SQL Server
+		\item Operational logs and documentation
+		\item AI vibecoding; Angular/Supabase basic; basic Git
 	\end{itemize}
 
 	\columnbreak
@@ -150,7 +140,7 @@ IT professional with over 3 years of on-site and remote support experience who a
 		\item Git and GitHub Professional Course (Platzi)
 		\item Software Engineering Fundamentals (Platzi)
 		\item Introduction to Generative AI (Google Cloud)
-		\item English: Basic
+		\item English -- technical reading; basic conversation
 	\end{itemize}
 
 \end{multicols}
