@@ -6,22 +6,22 @@
 \usepackage[utf8]{inputenc}
 
 % ---------- Márgenes ----------
-\usepackage[margin=1.5cm]{geometry}
+\usepackage[margin=1.45cm]{geometry}
 
 % ---------- Tipografía ----------
 \usepackage{lmodern}
 
 % ---------- Utilidades ----------
-\usepackage{xcolor}    % Colores (usado por hyperref y títulos)
-\usepackage[hidelinks]{hyperref}  % Enlaces y metadatos PDF
-\usepackage{enumitem}  % Listas compactas
-\usepackage{titlesec}  % Títulos personalizados
-\usepackage{multicol}  % Columnas para habilidades
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{multicol}
 
 % ---------- Espaciado y listas ----------
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0.15\baselineskip}
-\setlist[itemize]{noitemsep, topsep=0pt, after=\vspace{0.15\baselineskip}}
+\setlength{\parskip}{0.12\baselineskip}
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1.2em, after=\vspace{0.12\baselineskip}}
 
 % ---------- Formato de secciones ----------
 \titleformat{\section}{
@@ -30,33 +30,28 @@
 
 \titlespacing{\section}{0pt}{6pt}{3pt}
 
-% \entry{Puesto}{Ubicación}{Empresa}{Fechas}
 \newcommand{\entry}[4]{
-  % Minipage asegura que el bloque del título no se rompa entre páginas
   \begin{minipage}[t]{\linewidth}
     \textbf{#1} \hfill \textit{#2} \\
     \textbf{\textit{#3}} \hfill #4
   \end{minipage}
 }
 
-% ==================================================
-% Contenido del documento
-% ==================================================
-
 \begin{document}
 
 \pagenumbering{gobble}
 
-% ---------- Encabezado ----------
 \begin{center}
 	{\huge\bfseries LUIS ÁNGEL RAMÍREZ VILLANUEVA}\\[3pt]
-	Oaxaca de Juárez, Oaxaca, México \textbullet{} (+52) 951 765 2254 \textbullet{}
-	\href{mailto:luisrmrz1699@gmail.com}{luisrmrz1699@gmail.com}
+	Oaxaca de Juárez \textbullet{} abierto a remoto México \textbullet{} (+52) 951 765 2254 \textbullet{}
+	\href{mailto:luisrmrz1699@gmail.com}{luisrmrz1699@gmail.com}\\[3pt]
+	\href{https://github.com/luisrmrz16}{GitHub} \textbullet{}
+	\href{https://www.linkedin.com/in/luisrmrz16/}{LinkedIn}
 \end{center}
 
 \section*{Perfil profesional}
 
-Ingeniero de Soporte con más de 3 años de experiencia en soporte en sitio y remoto de manera eficiente. Destaco por mi paciencia, la comprensión con los usuarios y el análisis de fallas; tengo talento para buscar soluciones alternativas a problemas poco habituales. Me apasiona la instalación, configuración y mejora de equipos y sistemas, y valoro un ambiente respetuoso orientado al crecimiento profesional.
+Más de 3 años en soporte en sitio y remoto (L1 y algo de L2): mesa de ayuda, tickets/ITSM, resolución de incidencias y empatía con usuarios. De forma secundaria, mejora herramientas internas operativas con apoyo de IA (``vibecoding'') y nociones básicas de desarrollo. Busca crecer en soporte, service desk o soporte en campo en Oaxaca o remoto México.
 
 \section*{Experiencia laboral}
 
@@ -66,10 +61,9 @@ Ingeniero de Soporte con más de 3 años de experiencia en soporte en sitio y re
 {Herst Electronics}
 {Junio 2026 --- Actualidad}
 \begin{itemize}
-	\item Responsable del soporte técnico y operación del área de sistemas en una sucursal del cliente Romasa, atendiendo solicitudes de usuarios, equipos de cómputo, impresoras y software básico
-	\item Soporte a procesos administrativos con Sicofi para generación de facturas, mejora del ERP interno en MS Access y modificación básica de registros en SQL Server
-	\item Respaldo de bases de datos del ERP, verificación de procesos necesarios en servidores y control de actividades mediante bitácora operativa
-	\item Desarrollo y mejora de una aplicación de inventario y mantenimientos con Angular y Supabase, apoyado en herramientas de inteligencia artificial
+	\item Soporte en sitio y mesa de ayuda (Romasa): tickets, Windows 10/11, impresoras, redes y Microsoft Office / Outlook
+	\item Apoyo administrativo con Sicofi (facturación), ERP en MS Access y SQL Server básico; bitácora / documentación operativa
+	\item Respaldo de BD del ERP y verificación de procesos en servidores; mejora de herramienta interna de inventario (Angular + Supabase) con IA
 \end{itemize}
 
 \entry
@@ -78,9 +72,9 @@ Ingeniero de Soporte con más de 3 años de experiencia en soporte en sitio y re
 {Herst Electronics}
 {Julio 2025 --- Junio 2026}
 \begin{itemize}
-	\item Soporte técnico en sitio al departamento de sistemas de Romasa y a clientes externos de la empresa, atendiendo incidencias de hardware, software e impresión
-	\item Instalación, configuración y preparación de equipos de cómputo para usuarios finales, incluyendo sistemas operativos y software básico
-	\item Mantenimiento preventivo de equipos de cómputo e impresión, actividad que permitió reducir incidencias recurrentes
+	\item Soporte en sitio a Romasa y clientes externos: hardware, software, impresoras e incidencias de red
+	\item Instalación y preparación de equipos Windows 10/11 (Office y software básico); mantenimiento preventivo de PCs e impresoras
+	\item Contribución inicial a sistema interno de inventario y mantenimientos para el área de soporte
 \end{itemize}
 
 \entry
@@ -89,10 +83,10 @@ Ingeniero de Soporte con más de 3 años de experiencia en soporte en sitio y re
 {Kenos Scanda}
 {Enero 2023 --- Febrero 2025}
 \begin{itemize}
-	\item Soporte técnico en sitio para Mobility ADO, atendiendo usuarios en oficinas, terminales y ubicaciones operativas
-	\item Resolución y seguimiento de incidencias de hardware, software y conectividad mediante IBM Maximo y ServiceNow
-	\item Incorporación de equipos a dominio y validación del estatus de usuarios en Active Directory
-	\item Instalación, configuración e inventario de equipos, incluyendo asignación de direcciones IP fijas y registro de responsivas
+	\item Soporte en sitio (L1/L2) para Mobility ADO: oficinas, terminales y sitios operativos; atención a usuarios y tickets
+	\item Ciclo de vida de tickets en IBM Maximo y ServiceNow (ITSM): registro, seguimiento, resolución y escalamiento
+	\item Active Directory (unión a dominio, validación de usuarios); Office / Outlook en entornos corporativos
+	\item Instalación e inventario de equipos; IP fijas, redes / DNS y registro de responsivas
 \end{itemize}
 
 \entry
@@ -101,10 +95,18 @@ Ingeniero de Soporte con más de 3 años de experiencia en soporte en sitio y re
 {Innovaciones Tecnológicas}
 {Septiembre 2018 --- Septiembre 2022}
 \begin{itemize}
-	\item Diagnóstico, reparación y mantenimiento de laptops y equipos de escritorio
+	\item Diagnóstico, reparación y mantenimiento de laptops y PCs
 	\item Instalación y configuración de sistemas operativos Windows y macOS
 	\item Ensamble de equipos, atención técnica a clientes y apoyo en ventas y caja
 \end{itemize}
+
+\section*{Proyectos}
+
+\begin{itemize}
+	\item \textbf{Herramienta interna de inventario y mantenimientos (Angular + Supabase)} --- Mejorada en Herst como apoyo al soporte operativo: inventario de equipos, seguimiento de mantenimientos y bitácora; interfaz web con consumo de datos; vibecoding con IA (no portafolio de desarrollador).
+\end{itemize}
+
+\textbf{Fortalezas:} empatía y paciencia con usuarios; documentación / bitácora clara; aprendizaje continuo.
 
 \section*{Educación}
 
@@ -124,12 +126,13 @@ Ingeniero de Soporte con más de 3 años de experiencia en soporte en sitio y re
 
 	\textbf{\MakeUppercase{Habilidades técnicas}}
 	\begin{itemize}
-		\item Soporte técnico en sitio y remoto
-		\item Windows, macOS y Linux
-		\item Active Directory y unión a dominio
-		\item Diagnóstico y mantenimiento de hardware y redes
-		\item Sicofi, MS Access, SQL Server básico, IBM Maximo y ServiceNow
-		\item Documentación técnica con Markdown y Obsidian
+		\item Soporte en sitio/remoto; mesa de ayuda y tickets
+		\item Windows 10/11, macOS, Linux; Active Directory
+		\item Hardware, impresoras, redes (IP/DNS)
+		\item Microsoft Office, Outlook; colaboración
+		\item ServiceNow, IBM Maximo (ITSM); SQL Server básico
+		\item Bitácora y documentación operativa
+		\item Vibecoding con IA; Angular/Supabase básico; Git básico
 	\end{itemize}
 
 	\columnbreak
@@ -141,7 +144,7 @@ Ingeniero de Soporte con más de 3 años de experiencia en soporte en sitio y re
 		\item Curso Profesional de Git y GitHub (Platzi)
 		\item Fundamentos de Ingeniería de Software (Platzi)
 		\item Introduction to Generative AI (Google Cloud)
-		\item Inglés – Nivel básico
+		\item Inglés – lectura técnica; conversación básica
 	\end{itemize}
 
 \end{multicols}
